@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assests/CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="torchBox">
+            <div class="date">
+                <h4></h4>
+                <h3></h3>
+            </div>
+            <div class="btn">
+                <button class="tchBtn">
+                    <div class="move"></div>
+                </button>
+                <p>TORCH</p>
+            </div>
+            <div class="torch"></div>
+        </div>
+
+        <div class="field">
+            <input type="text" name="" id="" disabled>
+        </div>
+
+        <div class="shift">
+            <button id="shift">shift</button>
+            <button id="fac">!</button>
+            <button id="onBtn">on</button>
+        </div>
+
+        <div class="operators">
+            <button id="cos">cos</button>
+            <button id="sin">sin</button>
+            <button id="tan">tan</button><br>
+            <button id="power">x<sup>2</sup></button>
+            <button id="root">√</button>
+            <button id="log">log</button>
+        </div>
+
+        <div class="numbers">
+            <div class="line1">
+                <button onclick="calc(7)">7</button>
+                <button onclick="calc(8)">8</button>
+                <button onclick="calc(9)">9</button>
+                <button id="AC"><i class="fa-solid fa-delete-left"></i></button>
+                <button id="delBtn">AC</button>
+            </div>
+
+            <div class="line2">
+                <button onclick="calc(4)">4</button>
+                <button onclick="calc(5)">5</button>
+                <button onclick="calc(6)">6</button>
+                <button class="operator-btn" onclick="calc('+')">+</button>
+                <button class="operator-btn" onclick="calc('-')">-</button>
+            </div>
+
+            <div class="line3">
+                <button onclick="calc(1)">1</button>
+                <button onclick="calc(2)">2</button>
+                <button onclick="calc(3)">3</button>
+                <button class="operator-btn" onclick="calc('*')">X</button>
+                <button class="operator-btn" onclick="calc('/')">/</button>
+            </div>
+
+            <div class="line4">
+                <button onclick="calc(0)">0</button>
+                <button onclick="calc('.')">.</button>
+                <button onclick="calc('(')">(</button>
+                <button onclick="calc(')')">)</button>
+                <button id="ansBtn">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assests/JS/app.js"></script>
+</body>
+</html>
