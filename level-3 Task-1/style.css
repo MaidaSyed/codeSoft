@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #010b13;
+    color: white;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: #bc13fe;
+    color: #fff;
+}
+header .font-effect-outline {
+    font-family: "Sofia", sans-serif;
+}
+header .text {
+    display: flex;
+    justify-content: space-between;
+}
+header .text img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+header .text h1 {
+    margin: 0 10px;
+    cursor: pointer;
+    font-family: "Sofia", sans-serif;
+    text-transform: capitalize;
+    text-shadow: 3px 3px 3px #ababab;
+}
+header .text h2 {
+    color: whitesmoke;
+    cursor: pointer;
+    margin: 10px;
+    font-family: "Audiowide", sans-serif;
+}
+.text h1 {
+    text-align: center;
+    margin: 15px;
+    font-family: "Audiowide", sans-serif;
+}
+.text .greet {
+    text-align: left;
+    font-family: "Sofia", sans-serif;
+    text-shadow: 3px 3px 3px #ababab;
+}
+.text .greet .fa-sun, .fa-mountain-sun {
+    background: linear-gradient(orange, orangered);
+    padding: 5px;
+    color: yellow;
+}
+.text .greet .fa-bed {
+    color: blue;
+}
+.text .greet .fa-moon {
+    background: linear-gradient(#1f1f1f, darkblue);
+    color: #fff;
+    padding: 5px;
+}
+.blogDiv {
+    border: 2px solid #bc13fe;
+    margin: 25px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px #bc13fe;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.blogDiv:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(241, 238, 238, 0.2);
+  }
+  
+.blogDiv h1 {
+    margin: 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    background-color: #bc13fe;
+    border: 1px solid ;
+    box-shadow: 0 4px 6px rgba(241, 238, 238, 0.2);
+    padding: 15px;
+    border: 20px;
+    color: #fff;
+    font-family: "Audiowide", sans-serif;
+}
+.blogDiv h1 span {
+    font-size: 15px;
+    color: whitesmoke;
+}
+.blogDiv #st {
+    font-size: 25px;
+    text-transform: capitalize;
+    font-family: "Sofia", sans-serif;
+}
+.blogDiv p {
+    margin-top: 20px;
+    /* margin-left: 40px; */
+    font-style: italic;
+    font-weight: 300;
+}
+.blog {
+padding: 20px;
+}
+.blog #time {
+    background-color: #bc13fe;
+    padding: 10px 30px;
+    border-radius: 32px;
+    color: #fff;
+    margin: 15px;
+    width: fit-content;
+}
+.blog #time span {
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width:920px) {
+    .font-effect-outline {
+        display: none;
+    }
+}
+@media screen and (max-width:430px) {
+    .blogDiv h1 {
+        line-break:strict;
+    }
+}
+@media screen and (max-width:400px) {
+    .round-img {
+        width: 30px;
+        height: 30px;
+    }
+    .text .name {
+        font-size: 25px;
+    }
+    .text #logout {
+        font-size: 15px;
+    }
+    .greet {
+        font-size: 25px;
+    }
+}

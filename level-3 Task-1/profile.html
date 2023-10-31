@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./profile.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="text">
+            <img id="round-prof" src="" alt="">
+            <h1 class="name"></h1>
+            <h2 id="login">Login</h2>
+        </div>
+        <div class="div">
+            <a href="./index.html"><h3 class="font-effect-outline">All Blogs <i class="fa-solid fa-blog"></i></h3></a>
+            <h3 id="logout" class="font-effect-outline">Signout <i class="fa-solid fa-right-from-bracket"></i></h3>
+        </div>
+    </header>
+    <main>
+    <div class="userData">
+        <div class="img">
+            <i class="fa-solid fa-upload"></i>
+            <img id="profile-img" src="" alt="">
+        </div>
+        <h1 id="name"></h1>
+        <span><i class='fa-solid fa-pen-to-square'></i></span>
+        <h1 class="font-effect-outline">UPDATE PASSWORD</h1>
+        <input type="text" id="old-pass" placeholder="OLD PASSWORD"><br><br>
+        <input type="text" id="new-pass" placeholder="NEW PASSWORD"><br><br>
+        <input type="text" id="rep-pass" placeholder="REPEAT PASSOWRD"><br><br>
+        <button id="updatePass">Update</button>
+    </div>
+
+    <div class="add-blog">
+        <h1>ADD YOUR <span>DAILY BLOGS</span> HERE</h1>
+
+        <div class="blog-post">
+            <input type="text" id="title" placeholder="TITLE"><br><br>
+            <textarea name="" id="text" cols="30" rows="10" placeholder="WHAT'S IN YOUR MIND??" ></textarea><br>
+            <button id="add-blog">ADD BLOG</button>
+        </div>
+    
+        <div class="my-blog">
+            <h1>MY BLOGS</h1>
+            <div class="blogs"></div>
+        </div>
+    </div>
+</main>
+
+<div class="overlay">
+<div class="updateBlogs">
+    <h2>UPDATE BLOG</h2>
+    <input type="text" id="updateTitle" placeholder="TITLE"> <br>
+    <textarea id="updateBlog" cols="30" rows="10" placeholder="WHAT ARE YOU THINKING??"></textarea><br>
+    <button id="edit-btn">EDIT</button>
+    <button class="cancel-blog">CANCEL</button>
+</div>
+</div>
+
+<!-- <div class="overlay"> -->
+<div class="deleteBlogs">
+    <p>Are you sure?? you want to delete this blog</p>
+    <button id="del-btn">DELETE</button>
+    <button class="cancel-del">CANCEL</button>
+</div>
+<!-- </div> -->
+
+<!-- <div class="overlay"> -->
+<div class="editName">
+    <input type="text" id="editedName" placeholder="ENTER NAME">
+    <button id="editName-btn">EDIT</button>
+    <button class="cancel-name">CANCEL</button>
+</div>
+<!-- </div> -->
+
+<div class="editProfile">
+    <input type="file" id="editedProfile">
+    <button id="editProfile-btn">Upload</button>
+    <button class="cancel-profile">CANCEL</button>
+</div>
+
+<div class="spinner-overlay">
+    <div class="lds-spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+
+    <script type="module" src="./profile.js"></script>
+    <script type="module" src="./config.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
